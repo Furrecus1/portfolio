@@ -1,0 +1,94 @@
+header {
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 14;
+    @include gradient(to right, $lightblue, $blue); 
+
+    @include desktop {
+        height: 60px;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 38px;
+        margin: 0;
+        padding: 0px 10px;
+        font-family: $logo-font;
+        font-weight: bold;
+    
+        @include desktop {
+            font-size: 40px; 
+        }
+    }
+    #hamburger-icon {
+        font-size: 22px;
+        padding: 10px 15px;
+        color: white;
+        float: right;
+        cursor: pointer;
+    
+        @include desktop {
+            display: none;
+        }
+    }
+    #hamburger-menu {
+        display: none;
+        width: 100%;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        box-shadow: 0px 1px 2px black;
+        text-align: center;
+        @include gradient(to right, $lightblue, $blue); 
+         
+         @include desktop {
+            display: block!important;
+            background: none;
+            top: 0;
+            box-shadow: none;
+            width: 70%;
+        }
+       
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        
+            @include desktop {
+                @include flex(flex);
+                justify-content: flex-end;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 12px 20px;
+        
+            @include desktop {
+                padding: 20px ;
+            }
+
+            &:hover{
+                background-color: rgba(0,0,0,0.4);
+            }    
+        }
+        i{
+           margin: 0 10px;
+        }
+    
+    }
+   
+}
+
+
+
+
+
+
+

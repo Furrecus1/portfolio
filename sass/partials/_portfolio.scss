@@ -1,0 +1,198 @@
+#portfolio-2{
+
+    text-align: center;
+
+    @include screen-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-content: center;
+        margin: 20px;
+        
+    }
+
+    #p-link{
+        
+        @include screen-4 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    .p-card{
+        border-radius: $border-radius;
+        padding: 10px;
+        margin:20px 10px;
+        @include gradient(to right, $lightblue, $blue); 
+        @include box-shadow($shadow);
+
+        @include screen-2 {
+            padding: 20px;
+            margin: 20px;
+         }
+         @include screen-4 {
+            
+            margin: 0px;
+         }
+
+        img{
+            width: 100%;
+            vertical-align: middle;
+            border-radius: $border-radius;
+            @include box-shadow($shadow);
+           
+            &:hover{
+                cursor: pointer;
+                @include box-shadow( 0px 6px 20px black);
+                
+            }
+        }
+
+        h3{
+            margin:20px;
+            font-size: 24px;
+        }
+
+        #portfolio-links{
+            @include flex(flex);
+            width: 250px;
+            margin: 0 auto;
+
+            @include screen-1{
+                width: 100%;
+            }
+           
+            a{
+                text-decoration: none;
+                
+                padding: 10px;
+                width: 33%;
+                font-size: 14px;
+                color: white;
+                font-weight: bold;
+                &:hover{
+                    background-color: rgba(0,0,0,0.4);
+                    color: white;
+                }
+            }
+            .new{
+                background-color: $lightbrown;
+                color: $blue;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            .old{
+                background-color: white;
+                color:$blue;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            
+        }
+    }
+    
+}
+
+#port-search{
+    margin: 10px;
+    @include flex(flex);
+    @include gradient(to right, $lightblue, $blue); 
+    padding: 10px;
+    border-radius: 10px;
+    @include box-shadow($shadow);
+
+    @include screen-2{
+        margin: 20px;
+        padding:20px;
+    }
+
+    #search-icon{
+        background-color: white;
+       padding-top: 10px;
+           
+        padding-left: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    img{
+        width: 24px;
+        height: 24px;
+    }
+    input{
+        padding: 14px;
+         border: none;
+           border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+         width: 100%;
+         
+         
+     }
+    
+}
+
+#portfolio-cards{
+
+    text-align: center;
+
+    @include screen-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-content: center;
+        
+        margin: 20px;
+    }
+
+    .portfolio-card{
+        @include gradient(to right, $lightblue, $blue); 
+        @include box-shadow($shadow); 
+        padding: 10px;
+        position: relative;
+        margin: 20px 10px;
+        border-radius: $border-radius;
+        @include screen-2{
+            margin: 20px;
+            padding: 20px;
+        }
+        @include screen-4 {
+            margin: 0;
+        }
+        
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover .website-cta{
+            z-index: 2;
+        }
+
+        .website-cta{
+            position: absolute;
+            background-color: rgba(0,0,0,0.4);
+            border-radius: $border-radius;
+            right: 10px;
+            left: 10px;
+            bottom: 13px;
+            top:10px;
+            z-index: -1;
+            display: grid;
+            align-content: center;
+
+            @include screen-2 {
+                right: 20px;
+                left:20px;
+                bottom: 23px;
+                top:20px;
+            }
+
+            
+        }
+
+        img{
+            z-index: 1;
+            border-radius: $border-radius;
+            @include box-shadow( $shadow);
+        }
+        
+
+    }
+}

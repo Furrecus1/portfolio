@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    font-family: $Montserrat;
+    color: white;
+    
+    .page-width{
+        max-width: 1200px;
+        margin: 60px auto 0 auto;
+        text-align: center;
+
+        @include desktop {
+            text-align: left;
+        }
+        
+        h1, h2{
+            margin: 10px;
+            padding: 20px ;
+            @include box-shadow($shadow); 
+            @include gradient(to right, $lightblue, $blue);
+            border-radius: $border-radius;
+
+            @include screen-2 {
+                margin: 20px;
+            }
+            
+        }
+        h1{
+            margin-top: 60px;
+            @include screen-2 {
+                margin-top: 70px;
+            }
+            @include desktop {
+                margin-top: 80px;
+            }
+        }
+         
+    }
+
+    #wrapper{
+        margin-top: 50px;
+        
+        @include desktop {
+            margin-top: 60px;
+        }
+
+    }
+}
+
+
+
+

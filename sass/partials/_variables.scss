@@ -1,0 +1,29 @@
+
+$font: 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+$font2: 'https://fonts.googleapis.com/css?family=Indie+Flower';
+@if(global_variable_exists(font)) {
+@import url($font);
+@import url($font2);
+}
+
+$Montserrat:'Montserrat', sans-serif;
+$logo-font:'Indie Flower', cursive;
+
+$lightblue: #70B0FF;
+$blue: #3d72b4;
+$lightbrown:#FFCC70;
+
+$shadow:0px 2px 8px black;
+
+$border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+

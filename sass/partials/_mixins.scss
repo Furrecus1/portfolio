@@ -1,0 +1,64 @@
+@mixin box-shadow($property) {
+    -webkit-box-shadow: $property;
+    box-shadow: $property;
+  }
+  @mixin gradient($right, $property, $property-2) {
+     -webkit-linear-gradient:$right, $property,  $property-2;
+     -o-linear-gradient:$right, $property, $property-2;
+    background: linear-gradient($right, $property, $property-2);
+  }
+
+ @mixin flex($property) {
+     -webkit-box: $property;
+     -ms-flexbox: $property;
+     display: $property;
+ }
+
+ $big-desktop: 1200px;
+
+ @mixin big-desktop {
+  @media (min-width: #{$big-desktop}) {
+    @content;
+  }
+}
+
+$screen-4: 880px;
+
+ @mixin screen-4 {
+   @media (min-width: #{$screen-4}) {
+     @content;
+   }
+ }
+
+
+ $desktop: 780px;
+
+ @mixin desktop {
+   @media (min-width: #{$desktop}) {
+     @content;
+   }
+ }
+
+ $screen-3: 550px;
+
+ @mixin screen-3 {
+   @media (min-width: #{$screen-3}) {
+     @content;
+   }
+ }
+
+ $screen-2: 440px;
+
+ @mixin screen-2 {
+   @media (min-width: #{$screen-2}) {
+     @content;
+   }
+ }
+
+ $screen-1: 400px;
+
+ @mixin screen-1 {
+  @media (min-width: #{$screen-1}) {
+    @content;
+  }
+}

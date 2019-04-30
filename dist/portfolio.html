@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="portfolio, my websites">
+<meta name="description" content="Portfolio assignment second year and all my websites">
+<title>Portfolio by Martin F. Johnsen</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/minified/style.min.css">
+</head>
+<body>
+    <header>
+        <div id="hamburger-icon">&#9776;</div>
+            
+            <nav id="hamburger-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" style="color:#FFCC70;">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div id="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            
+    </header>      
+    <div id="wrapper" class="page-width">
+        <h1>My portfolio</h1>
+        <h2>Portfolio second year</h2>
+
+        <div id="portfolio-2">
+
+            <div class="p-card">
+                <img src="images/space-img.jpg" alt="image of space launch website" onclick="linkSpaceLaunch();">
+                <h3>Space launch</h3>
+                <div id="portfolio-links">
+                    <a href="http://furresite.com/new/space-launch/index.html" target="_blank" class="new">New version</a>
+                    <a href="https://github.com/Furrecus1/Space-launch-website" target="_blank" class="git">Github link</a>
+                    <a href="http://furresite.com/old/space-launch/index.html" target="_blank" class="old">Old version</a>
+                </div>
+            </div>
+            <div class="p-card">
+                <img src="images/island-escape-img.jpg" onclick="linkIsland();" alt="image of island escapes website">
+                <h3>Island escapes</h3>
+                <div id="portfolio-links">
+                    <a href="http://furresite.com/new/island-escapes/index.html" target="_blank" class="new">New version</a>
+                    <a href="https://github.com/Furrecus1/island-escapes-website" target="_blank" class="git">Github link</a>
+                    <a href="http://furresite.com/old/island-escapes/index.html" target="_blank" class="old">Old version</a>
+                </div>
+            </div>
+            <div class="p-card" id="p-link">
+                <img src="images/portfolio-img.jpg" alt="image of portfolio website" onclick="linkPortfolio();">
+                <h3>Portfolio website</h3>
+                <div id="portfolio-links">
+                    <a href="http://furresite.com/portfolio-2/index.html" target="_blank" class="new">New version</a>
+                    <a href="https://github.com/Furrecus1/portfolio" target="_blank" class="git">Github link</a>
+                    <a href="#" class="old">Old version</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Collection of all my website</h2>
+
+        <form id="port-search">
+            <div id="search-icon">
+                 <img src="images/magnifying-glass-1976105_1280.png" width="100%" alt=" search icon">
+            </div>
+                 <input type="text" id="myInput" onkeyup="websiteSearch()" placeholder="Search for website" title="Type in a name">
+        </form>
+
+        <div id="portfolio-cards">
+
+            <div class="portfolio-card" onclick="linkBoardGame()">
+                <div class="website-cta">
+                    <h3>Board game</h3>
+                    <h4>Click to visit</h4>
+                </div>
+                <img src="images/board-img.jpg" alt="Image of board game website" width="100%">
+            </div>
+            <div class="portfolio-card" onclick="linkDecor()">
+                <div class="website-cta">
+                    <h3>Home decor</h3>
+                    <h4>Click to visit</h4>
+                </div>
+                <img src="images/decor-img.jpg" alt="Image of home decor website" width="100%">
+            </div>
+            <div class="portfolio-card" onclick="linkIsland()">
+                <div class="website-cta">
+                    <h3>Island escapes</h3>
+                    <h4>Click to visit</h4>
+                </div>
+                <img src="images/island-escape-img.jpg" alt="Image of island escapes website" width="100%">
+            </div>
+            <div class="portfolio-card" onclick="linkSpaceLaunch()">
+                <div class="website-cta">
+                    <h3>Space launch</h3>
+                    <h4>Click to visit</h4>
+                </div>
+                <img src="images/space-img.jpg" alt="Image of spaceX website" width="100%">
+            </div>
+            <div class="portfolio-card" onclick="linkScience()">
+                <div class="website-cta">
+                    <h3>Science museum</h3>
+                    <h4>Click to visit</h4>
+                </div>
+                <img src="images/museum-img.jpg" alt="Image of science museum website" width="100%">
+            </div>
+            <div class="portfolio-card" onclick="linkLetha()">
+                <div class="website-cta">
+                    <h3>Letha</h3>
+                    <h4>Click to visit</h4>
+                </div>
+                <img src="images/letha-img.jpg" alt="Image of letha website" width="100%">
+            </div>
+            <div class="portfolio-card" onclick="linkRecycle()">
+                    <div class="website-cta">
+                        <h3>Re-cycle</h3>
+                        <h4>Click to visit</h4>
+                    </div>
+                <img src="images/re-cycle-img.jpg" alt="Image of re-cycle website" width="100%">
+            </div>
+            <div class="portfolio-card" onclick="linkWooden()">
+                    <div class="website-cta">
+                        <h3>Toy store</h3>
+                        <h4>Click to visit</h4>
+                    </div>
+                <img src="images/toy-img.jpg" alt="Image of wooden toy website" width="100%">
+            </div>
+
+        </div>
+
+    </div>
+      <footer>
+         <div id="social-div">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+         </div>
+
+         <p>Copyright &#169; 2019</p>
+      </footer>
+      
+      <script src="scripts/script.js"></script>
+      <script src="scripts/portfolio.js"></script>    
+   </body>
+</html>
