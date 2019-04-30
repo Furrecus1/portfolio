@@ -18,7 +18,7 @@ function linkSpaceLaunch() {
     window.open("http://www.furresite.com/new/space-launch/index.html");
 }
 function linkIsland() {
-    window.open("http://www.furresite.com/new/island-escapes/index.html");
+    window.open("http://www.furresite.com/new/island-escapes");
 }
 function linkPortfolio() {
     window.open("http://www.furresite.com/portfolio-2/index.html");
